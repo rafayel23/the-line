@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Follow The Line</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+
+<body>
+  <div id="layout">
+    <div id="disconnected-view">
+      <div class="view-container">
+        <h1>Follow The Line</h1>
+        <button id="connect-btn" disabled>Connect</button>
+      </div>
+    </div>
+
+    <div id="connected-view" hidden>
+      <div class="view-container">
+        <div id="desktop">...</div>
+        <button id="disconnect-btn">Disconnect</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
